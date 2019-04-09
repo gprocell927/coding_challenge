@@ -43,6 +43,11 @@ describe('Application', () => {
     assert.equal(App.checkInputSize(5079), 'five thousand seventy-nine');
     assert.equal(App.checkInputSize(5709), 'five thousand seven hundred nine');
   });
+  it('should return the correct string for a five-digit number ending in non-zero', () => {
+    assert.equal(App.checkInputSize(40004), 'fourty thousand four');
+    assert.equal(App.checkInputSize(50079), 'fifty thousand seventy-nine');
+    assert.equal(App.checkInputSize(57709), 'fifty-seven thousand seven hundred nine');
+  });
 
 
 

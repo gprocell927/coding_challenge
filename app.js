@@ -57,7 +57,24 @@ function AppController() {
             }
                 else {
                 return `${single[splitNumber[0]]} ${triple} ${double[splitNumber[1]]}-${single[splitNumber[2]]}`;
-            }   
+            }
+            case 5: //evaluate ten thousands
+                if (splitNumber.filter(el => el === '0').length === 4) {
+                    return `${double[splitNumber[0]]} ${quadruple}`; // ex: 40000
+                } else if (splitNumber[2] === '0' && splitNumber[3] === '0') { // ex: 41000
+                    return `${single[splitNumber[0]]} ${quadruple} ${single[splitNumber[1]]} ${triple}`;
+                } else if (splitNumber[2] === '0' && splitNumber[3] === '0' && splitNumber[4] === '0') { // ex: 40004
+                    return `${double[splitNumber[0]]} ${quadruple} ${single[splitNumber[4]]}`;
+                } else if (splitNumber[1] === '0' && splitNumber[2] === '0'&& splitNumber[4] === '0') { //ex: 40050
+                    return `${double[splitNumber[0]]} ${quadruple} ${double[splitNumber[3]]}`;
+                } else if (splitNumber[1] === '0') { //ex: 40056
+                    return `${single[splitNumber[0]]} ${quadruple} ${double[splitNumber[2]]}-${single[splitNumber[3]]}`;
+                } else if (splitNumber[2] === '0') { //ex: 46006
+                    return `${single[splitNumber[0]]} ${quadruple} ${single[splitNumber[1]]} ${triple} ${single[splitNumber[3]]}`;
+                }
+                else {
+                    return `${single[splitNumber[0]]} ${triple} ${double[splitNumber[1]]}-${single[splitNumber[2]]}`;
+                }
                 
         }
 
