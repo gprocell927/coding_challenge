@@ -1,25 +1,3 @@
-<h2>Congratulations for making it to the next stage of the i3logix interview!</h2>
-
-These tests are designed to give us a sense of your style as a programmer as well as your ability to solve problems.
-
-Like real life, we expect that you may need or want to look at some
-completed solutions to these problems in order to inspire your solution. Please keep in mind though that during the next stage of the interview process you will need to make alterations to your code to solve for different use-cases and/or edge-cases, so please make sure to write something that you understand and can work with on the fly.
-
-<b>Please only complete one of the three challenges!</b>
-
-<h2>Submission Steps</h2>
-
-This is what you'll need to do to submit your challenge:
-
-1. Fork this repo
-2. Once you're finished, email us a link to your repo
-
-<h2>Testing and Additional Notes</h2>
-
-This challenge includes a testing suite that can be accessed with the command `npm test` in the root of the project.
-
-Additionally, by using babel you are also able to write your solution using ES6.
-
 # The Game of Life
 
 Write some code that evolves generations through the "game of
